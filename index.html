@@ -12,10 +12,10 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #fafafa;
+            color: #ffffff;
+            background: #191919;
         }
 
         .container {
@@ -26,8 +26,8 @@
 
         /* Header & Navigation */
         header {
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: #222222;
+            border-bottom: 1px solid #333333;
             position: fixed;
             width: 100%;
             top: 0;
@@ -44,7 +44,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #2c3e50;
+            color: #ffffff;
         }
 
         .nav-links {
@@ -55,22 +55,23 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #333;
+            color: #cccccc;
             font-weight: 500;
             transition: color 0.3s;
         }
 
         .nav-links a:hover {
-            color: #3498db;
+            color: #ffffff;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #191919;
             color: white;
             padding: 150px 0 100px;
             text-align: center;
             margin-top: 70px;
+            border-bottom: 1px solid #333333;
         }
 
         .hero-content h1 {
@@ -87,24 +88,26 @@
 
         .cta-button {
             display: inline-block;
-            background: #e74c3c;
-            color: white;
+            background: #ffffff;
+            color: #191919;
             padding: 15px 30px;
             text-decoration: none;
-            border-radius: 50px;
+            border-radius: 8px;
             font-weight: 600;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: all 0.3s ease;
+            border: 1px solid #ffffff;
         }
 
         .cta-button:hover {
+            background: transparent;
+            color: #ffffff;
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(231, 76, 60, 0.3);
         }
 
         /* About Section */
         .about {
             padding: 100px 0;
-            background: white;
+            background: #191919;
         }
 
         .about-content {
@@ -117,13 +120,13 @@
         .about-text h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
-            color: #2c3e50;
+            color: #ffffff;
         }
 
         .about-text p {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
-            color: #666;
+            color: #cccccc;
         }
 
         .profile-image {
@@ -131,20 +134,21 @@
             height: 300px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            object-position: 55% 15%;
+            border: 3px solid #333333;
         }
 
         /* Skills Section */
         .skills {
             padding: 100px 0;
-            background: #f8f9fa;
+            background: #222222;
         }
 
         .section-title {
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            color: #2c3e50;
+            color: #ffffff;
         }
 
         .skills-grid {
@@ -155,16 +159,16 @@
         }
 
         .skill-category {
-            background: white;
+            background: #191919;
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 1px solid #333333;
         }
 
         .skill-category h3 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: #3498db;
+            color: #ffffff;
         }
 
         .skill-list {
@@ -174,17 +178,18 @@
         }
 
         .skill-tag {
-            background: #ecf0f1;
+            background: #333333;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
-            color: #2c3e50;
+            color: #cccccc;
+            border: 1px solid #444444;
         }
 
         /* Experience Section */
         .experience {
             padding: 100px 0;
-            background: white;
+            background: #191919;
         }
 
         .experience-grid {
@@ -193,111 +198,101 @@
         }
 
         .experience-item {
-            background: #f8f9fa;
+            background: #222222;
             padding: 2rem;
             border-radius: 10px;
-            border-left: 4px solid #3498db;
+            border: 1px solid #333333;
+            border-left: 4px solid #ffffff;
         }
 
         .experience-item h3 {
             font-size: 1.4rem;
-            color: #2c3e50;
+            color: #ffffff;
             margin-bottom: 0.5rem;
         }
 
         .experience-item .role {
-            color: #3498db;
+            color: #cccccc;
             font-weight: 600;
             margin-bottom: 1rem;
         }
 
         .experience-item p {
-            color: #666;
+            color: #cccccc;
         }
 
-        /* Services Section */
-        .services {
+        /* Projects Section */
+        .projects {
             padding: 100px 0;
-            background: #2c3e50;
-            color: white;
+            background: #222222;
         }
 
-        .services-grid {
+        .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
 
-        .service-card {
-            background: rgba(255,255,255,0.1);
+        .project-card {
+            background: #191919;
+            border: 1px solid #333333;
+            border-radius: 10px;
             padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
 
-        .service-number {
-            background: #3498db;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #ffffff;
+        }
+
+        .project-card h3 {
+            color: #ffffff;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            color: #cccccc;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .project-tags {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin: 0 auto 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
         }
 
-        .service-card h3 {
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
+        .project-tag {
+            background: #333333;
+            color: #cccccc;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            border: 1px solid #444444;
         }
 
-        .service-card .price {
-            color: #3498db;
-            font-weight: 600;
-            margin: 1rem 0;
+        .project-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #333333;
+            transition: border-color 0.3s ease;
         }
 
-        /* Template Showcase */
-        .template-showcase {
-            padding: 100px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
-        }
-
-        .template-showcase h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .template-showcase p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .template-preview {
-            background: white;
-            border-radius: 10px;
-            padding: 1rem;
-            margin: 2rem auto;
-            max-width: 600px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
-
-        .template-preview img {
-            width: 100%;
-            border-radius: 5px;
+        .project-link:hover {
+            border-color: #ffffff;
         }
 
         /* Footer */
         footer {
-            background: #2c3e50;
+            background: #191919;
             color: white;
             text-align: center;
             padding: 3rem 0;
+            border-top: 1px solid #333333;
         }
 
         .footer-links {
@@ -308,16 +303,17 @@
         }
 
         .footer-links a {
-            color: white;
+            color: #cccccc;
             text-decoration: none;
             padding: 0.5rem 1rem;
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 1px solid #333333;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
         }
 
         .footer-links a:hover {
-            background: rgba(255,255,255,0.1);
+            color: #ffffff;
+            border-color: #ffffff;
         }
 
         /* Responsive Design */
@@ -333,11 +329,30 @@
             .about-content {
                 grid-template-columns: 1fr;
                 text-align: center;
+                gap: 2rem;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
             }
 
             .skills-grid,
-            .services-grid {
+            .projects-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-text h2 {
+                font-size: 2rem;
             }
         }
 
@@ -366,18 +381,19 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" role="banner">
         <div class="container">
             <div class="hero-content fade-in">
                 <h1>Charlie Mathes</h1>
-                <p>Data Scientist & Tech Consultant | Building Solutions That Drive Real Value</p>
-                <a href="#contact" class="cta-button">Get In Touch</a>
+                <p>Data Scientist & Tech Consultant</p>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">Building solutions that drive real value through data science and technical expertise</p>
+                <a href="#contact" class="cta-button" aria-label="Contact Charlie Mathes">Get In Touch</a>
             </div>
         </div>
     </section>
@@ -386,7 +402,7 @@
         <div class="container">
             <div class="about-content">
                 <div>
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiByeD0iMTUwIiBmaWxsPSIjZGRkIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDAiIGZpbGw9IiM2NjYiPkNNPC90ZXh0Pgo8L3N2Zz4K" alt="Charlie Mathes" class="profile-image">
+                    <img src="charlie_headshot.jpg" alt="Charlie Mathes - Professional headshot showing a smiling man with glasses, beard, wearing a navy suit and tie" class="profile-image">
                 </div>
                 <div class="about-text">
                     <h2>Hi, I'm Charlie</h2>
@@ -397,9 +413,9 @@
         </div>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" aria-labelledby="skills-title">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <h2 id="skills-title" class="section-title">Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>💻 Technical Skills</h3>
@@ -457,27 +473,42 @@
         </div>
     </section>
 
-    <section id="experience" class="experience">
+    <section id="experience" class="experience" aria-labelledby="experience-title">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 id="experience-title" class="section-title">Experience</h2>
             <div class="experience-grid">
-                <div class="experience-item">
-                    <h3>BMG Solutions</h3>
+                <div class="experience-item" style="border-left-color: #1a5490;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="background: #1a5490; color: white; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; font-size: 0.9rem;">BMG</div>
+                        <h3 style="margin: 0;">BMG Solutions</h3>
+                    </div>
                     <div class="role">Data Engineering & Market Intelligence</div>
                     <p>Focused on data engineering solutions and market data intelligence to drive business insights and decision-making.</p>
                 </div>
-                <div class="experience-item">
-                    <h3>Deloitte Consulting</h3>
+                <div class="experience-item" style="border-left-color: #86bc25;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="background: #000000; color: white; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; font-size: 0.9rem; position: relative;">
+                            Deloitte
+                            <div style="position: absolute; top: 50%; right: -8px; width: 6px; height: 6px; background: #86bc25; border-radius: 50%; transform: translateY(-50%);"></div>
+                        </div>
+                        <h3 style="margin: 0;">Deloitte Consulting</h3>
+                    </div>
                     <div class="role">Technology Consultant (7 years)</div>
                     <p>Extensive experience in technology consulting, helping organizations transform their operations and implement efficient solutions.</p>
                 </div>
-                <div class="experience-item">
-                    <h3>On Mission Enterprises</h3>
+                <div class="experience-item" style="border-left-color: #ffffff;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="background: #333333; color: white; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; font-size: 0.9rem;">OME</div>
+                        <h3 style="margin: 0;">On Mission Enterprises</h3>
+                    </div>
                     <div class="role">Aerospace & Software Development</div>
                     <p>Contributed to aerospace and software projects in a startup environment, gaining valuable experience in agile development and innovation.</p>
                 </div>
-                <div class="experience-item">
-                    <h3>University of Notre Dame - ESTEEM Program</h3>
+                <div class="experience-item" style="border-left-color: #ffffff;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="background: #003366; color: white; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; font-size: 0.9rem;">ND</div>
+                        <h3 style="margin: 0;">University of Notre Dame - ESTEEM Program</h3>
+                    </div>
                     <div class="role">Current Student</div>
                     <p>Pursuing advanced studies in entrepreneurship, technology, and innovation with a focus on startups and data science applications.</p>
                 </div>
@@ -485,69 +516,55 @@
         </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="projects" class="projects" aria-labelledby="projects-title">
         <div class="container">
-            <h2 class="section-title">What I Offer</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-number">01</div>
-                    <h3>Workflow Consultation</h3>
-                    <p>Whether you're dealing with communication bottlenecks or inefficient processes, I'll help you design a system that works for your unique needs.</p>
-                    <div class="price">$150 for 60 min session</div>
-                    <ul style="text-align: left; margin-top: 1rem;">
-                        <li>One-on-one consultation</li>
-                        <li>Analysis and actionable recommendations</li>
-                        <li>Follow-up support for implementation</li>
-                    </ul>
+            <h2 id="projects-title" class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Supply Chain Optimization Platform</h3>
+                    <p>Built a comprehensive data pipeline and machine learning model to optimize supply chain operations, reducing costs by 15% and improving delivery times by 22%.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Machine Learning</span>
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">Tableau</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study →</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-number">02</div>
-                    <h3>Custom Setup</h3>
-                    <p>Don't just use a template—create a setup tailored to your team's needs. I'll work with you to design a system that adapts to your workflow.</p>
-                    <div class="price">Starting at $500</div>
-                    <ul style="text-align: left; margin-top: 1rem;">
-                        <li>Customised Notion workspace</li>
-                        <li>Workflow design and implementation</li>
-                        <li>Training and documentation</li>
-                    </ul>
+                <div class="project-card">
+                    <h3>Manufacturing Process Analytics</h3>
+                    <p>Developed predictive analytics solution for manufacturing quality control, implementing real-time monitoring and anomaly detection to reduce defect rates by 30%.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Data Engineering</span>
+                        <span class="project-tag">BigQuery</span>
+                        <span class="project-tag">Pandas</span>
+                        <span class="project-tag">GCP</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study →</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-number">03</div>
-                    <h3>Contractual In-House Ops</h3>
-                    <p>Need an experienced ops person without the full-time commitment? Flexible, contract-based operations management to help you scale.</p>
-                    <div class="price">Starting at $3,000/month</div>
-                    <ul style="text-align: left; margin-top: 1rem;">
-                        <li>Workflow optimisation</li>
-                        <li>Team coordination and progress reports</li>
-                        <li>Strategic direction for growth</li>
-                    </ul>
+                <div class="project-card">
+                    <h3>Customer Behavior Analysis</h3>
+                    <p>Implemented advanced NLP and clustering algorithms to analyze customer feedback and behavior patterns, providing actionable insights that increased customer retention by 18%.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">NLP</span>
+                        <span class="project-tag">Feature Engineering</span>
+                        <span class="project-tag">Matplotlib</span>
+                        <span class="project-tag">AWS</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="template-showcase">
-        <div class="container">
-            <h2>Free Notion Template</h2>
-            <p><strong>Are your workflows a mess?</strong></p>
-            <p>Here's a setup to help you run your projects and track time like a pro. It's a Notion template with project, task and time tracking databases, plus a pre-built dashboard with filtered views to stay on top of your workload.</p>
-            <div class="template-preview">
-                <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #333; font-size: 1.2rem; font-weight: 600;">
-                    📊 Project Manager Template Preview
-                </div>
-            </div>
-            <a href="https://www.notion.com/templates/project-task-tracker-with-time-tracking" class="cta-button" target="_blank">Get Free Template 🎉</a>
-        </div>
-    </section>
-
-    <footer id="contact">
+    <footer id="contact" role="contentinfo">
         <div class="container">
             <h2 style="margin-bottom: 2rem;">Get In Touch</h2>
             <div class="footer-links">
-                <a href="mailto:charlie@example.com">Email</a>
-                <a href="https://linkedin.com/in/charliemathes" target="_blank">LinkedIn</a>
-                <a href="https://github.com/charliemathes" target="_blank">GitHub</a>
-                <a href="#services">Book Consultation</a>
+                <a href="mailto:charlie.mathes@nd.edu" aria-label="Send email to Charlie Mathes">📧 Email</a>
+                <a href="https://linkedin.com/in/charliemathes" target="_blank" rel="noopener noreferrer" aria-label="Visit Charlie Mathes LinkedIn profile">💼 LinkedIn</a>
+                <a href="https://github.com/charliemathes" target="_blank" rel="noopener noreferrer" aria-label="Visit Charlie Mathes GitHub profile">💻 GitHub</a>
+                <a href="https://www.notion.so/charliemathes" target="_blank" rel="noopener noreferrer" aria-label="Visit Charlie Mathes Notion workspace">📝 Notion</a>
             </div>
             <p>&copy; 2025 Charlie Mathes. All rights reserved.</p>
         </div>
@@ -585,6 +602,133 @@
         // Observe all sections
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
+        });
+    </script>
+
+    <!-- Load content configuration -->
+    <script src="content.js"></script>
+    
+    <!-- Dynamic content loader -->
+    <script>
+        // Load content when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const content = window.portfolioContent;
+            
+            // Update personal information
+            document.querySelector('.logo').textContent = content.personal.name;
+            document.querySelector('.hero h1').textContent = content.personal.name;
+            document.querySelector('.hero p:first-of-type').textContent = content.personal.title;
+            document.querySelector('.hero p:nth-of-type(2)').textContent = content.personal.tagline;
+            
+            // Update navigation
+            const navLinks = document.querySelectorAll('.nav-links a');
+            content.navigation.forEach((item, index) => {
+                if (navLinks[index]) {
+                    navLinks[index].textContent = item.label;
+                    navLinks[index].href = item.href;
+                }
+            });
+            
+            // Update profile image
+            const profileImage = document.querySelector('.profile-image');
+            if (profileImage) {
+                profileImage.src = content.personal.profileImage;
+                profileImage.alt = content.personal.profileImageAlt;
+            }
+            
+            // Update about section
+            document.querySelector('.about-text h2').textContent = content.about.greeting;
+            const aboutParagraphs = document.querySelectorAll('.about-text p');
+            content.about.bio.forEach((paragraph, index) => {
+                if (aboutParagraphs[index]) {
+                    aboutParagraphs[index].textContent = paragraph;
+                }
+            });
+            
+            // Update skills section
+            document.getElementById('skills-title').textContent = content.skills.title;
+            const skillCategories = document.querySelectorAll('.skill-category');
+            content.skills.categories.forEach((category, index) => {
+                if (skillCategories[index]) {
+                    const categoryElement = skillCategories[index];
+                    categoryElement.querySelector('h3').textContent = category.title;
+                    const skillList = categoryElement.querySelector('.skill-list');
+                    skillList.innerHTML = category.skills.map(skill => 
+                        `<span class="skill-tag">${skill}</span>`
+                    ).join('');
+                }
+            });
+            
+            // Update experience section
+            document.getElementById('experience-title').textContent = content.experience.title;
+            const experienceItems = document.querySelectorAll('.experience-item');
+            content.experience.jobs.forEach((job, index) => {
+                if (experienceItems[index]) {
+                    const item = experienceItems[index];
+                    item.style.borderLeftColor = job.brandColor;
+                    
+                    const brandElement = item.querySelector('div[style*="background"]');
+                    if (brandElement) {
+                        brandElement.textContent = job.brandAbbrev;
+                        brandElement.style.background = job.brandBgColor || job.brandColor;
+                        
+                        // Add Deloitte accent dot if needed
+                        if (job.hasAccentDot) {
+                            const existingDot = brandElement.querySelector('.accent-dot');
+                            if (!existingDot) {
+                                const dot = document.createElement('div');
+                                dot.className = 'accent-dot';
+                                dot.style.cssText = `position: absolute; top: 50%; right: -8px; width: 6px; height: 6px; background: ${job.brandColor}; border-radius: 50%; transform: translateY(-50%);`;
+                                brandElement.appendChild(dot);
+                                brandElement.style.position = 'relative';
+                            }
+                        }
+                    }
+                    
+                    const h3 = item.querySelector('h3');
+                    if (h3) h3.textContent = job.company;
+                    
+                    const role = item.querySelector('.role');
+                    if (role) role.textContent = job.role;
+                    
+                    const description = item.querySelector('p');
+                    if (description) description.textContent = job.description;
+                }
+            });
+            
+            // Update projects section
+            document.getElementById('projects-title').textContent = content.projects.title;
+            const projectCards = document.querySelectorAll('.project-card');
+            content.projects.items.forEach((project, index) => {
+                if (projectCards[index]) {
+                    const card = projectCards[index];
+                    card.querySelector('h3').textContent = project.title;
+                    card.querySelector('p').textContent = project.description;
+                    
+                    const tagsContainer = card.querySelector('.project-tags');
+                    tagsContainer.innerHTML = project.tags.map(tag => 
+                        `<span class="project-tag">${tag}</span>`
+                    ).join('');
+                    
+                    const link = card.querySelector('.project-link');
+                    link.href = project.link;
+                }
+            });
+            
+            // Update contact section
+            document.querySelector('footer h2').textContent = content.contact.title;
+            const contactLinks = document.querySelectorAll('.footer-links a');
+            content.contact.links.forEach((link, index) => {
+                if (contactLinks[index]) {
+                    const linkElement = contactLinks[index];
+                    linkElement.textContent = link.label;
+                    linkElement.href = link.url;
+                    linkElement.setAttribute('aria-label', link.ariaLabel);
+                }
+            });
+            
+            // Update footer copyright
+            document.querySelector('footer p:last-child').innerHTML = content.footer.copyright;
         });
     </script>
 </body>
